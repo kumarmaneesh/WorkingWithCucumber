@@ -1,10 +1,11 @@
 package stepDefinition;
  
-import java.util.concurrent.TimeUnit;
- 
+import java.util.concurrent.TimeUnit; 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
 //import org.openqa.selenium.firefox.FirefoxDriver;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -13,6 +14,7 @@ import cucumber.api.java.en.When;
 public class TestSteps {
 	public static WebDriver driver;
 	static String driverPath = "C:\\Users\\ttc.mk\\Desktop\\MK\\";
+	@Test
 	@Given("^User is on Home Page$")
 	public void user_is_on_Home_Page() throws Throwable {
         //driver = new FirefoxDriver();
